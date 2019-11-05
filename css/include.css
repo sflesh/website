@@ -1,0 +1,187 @@
+@charset "utf-8";
+	
+/*header*/
+#header{
+	text-align:center;
+	height:80px;
+	line-height:80px;
+}
+#header h1{
+	width:110px;
+	height:45px;
+	background:url(../images/sp_com.png) no-repeat -300px -5px;
+	text-indent:-9999px;
+	position:absolute;
+	left:50px;
+	top:15px;
+}
+#header h1 a{
+	display:block;
+}
+.gnb{
+	display:inline-block;
+	font-size:17px;
+}
+.gnb li{
+    position:relative;
+	float:left;
+	margin:0 30px;
+}
+.gnb li:hover a{
+    color:#2d5b79;
+    font-weight:bold;
+}
+.gnb li a:after{/*이거 대신 border-bottom으로 설정가능*/
+    content:"";
+    display:none;
+    width:100%;
+    height:1px;
+    background:#2d5b79;
+    position:absolute;
+    bottom:20px;
+}
+.gnb li:hover a:after{
+    display:block;
+}
+.gnb a{
+	color:#000;
+}
+.utill{
+	position:absolute;
+	top:0;
+	right:50px;
+	font-size:13px;
+}
+.utill li{
+	float:left;
+}
+.utill li:after{
+	content:"";
+	display:inline-block;
+	width:1px;
+	height:8px;
+	background:#ccc;
+	margin:0 5px;
+}
+.utill li:last-child:after{
+	display:none;
+}
+.utill a{
+	color:#000;
+}
+.utill a:hover{
+    text-decoration:underline;
+}
+
+/*푸터 시작*/
+#footer{}
+.footerTop{
+    position:relative;
+    color:#fff;
+    background:#383f43;
+    height:50px;
+}
+
+.ftList{
+    display:inline-block;
+	font-size:17px;
+    font-size:12px;
+}
+.ftList li{
+    line-height:50px;
+    float:left;
+    font-weight:bold;
+}
+.ftList a{
+    color:#fff;
+}
+
+.ftList li:hover a{
+    text-decoration:underline;
+}
+.ftList li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:8px;
+    background:#ccc;
+    margin:0 10px;
+}
+.ftList li:last-child:after{
+    display:none;
+}
+.ftBox1{
+    position:absolute;
+	top:10px;
+	right:550px;
+	font-size:13px;
+}
+.ftBox1 p{
+    padding:5px 10px;
+    background: #2a3033;
+}
+.ftBox1 span{
+    padding-left:5px;
+    font-size:18px;
+}
+
+.ftBox2{
+    position:absolute;
+	top:10px;
+	right:350px;
+	font-size:15px;
+}
+.ftBox2 p{
+    display:inline-block;
+    padding:5px 0 0 10px;
+    background:#fff url(../images/arrow.png) no-repeat 95%;
+    color:#999;
+    font-size:13px;
+    padding-right:80px;
+    height:25px;  
+}
+
+.ftlogo{
+    padding:50px 0;
+    background:#4c5459;
+    text-align:center;
+    color:#fff;
+}
+.ftlogo h3{
+    width:130px;
+	height:50px;
+	background:url(../images/sp_com.png) no-repeat -150px 0;
+	text-indent:-9999px;
+    margin:0 auto;
+    margin-bottom:30px;
+    
+}
+.ftlogo a{
+    display:block;
+}
+
+.ftlogo ul{
+    font-size:12px;
+    display:inline-block;
+}
+.ftlogo li{
+    float:left;    
+}
+.ftlogo li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:8px;
+    background:#ccc;
+    margin:0 10px;
+}
+.ftlogo li:last-child:after{
+    display:none;
+}
+.ftlogo p{
+    margin-top:10px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+	

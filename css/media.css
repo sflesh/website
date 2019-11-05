@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+@media screen and (max-width:768px){
+	
+	.gnb{display:none;}
+	.utill{display:none;}
+	
+	.inner{width:100%;}
+	
+	
+	
+	/*패널*/
+	#header{
+		position: relative;}
+	.panel{
+		position: absolute;
+		top:50%;
+		right:10px;
+		margin-top:-8px;}
+	.panel a:before,.panel span,.panel a:after{
+		content:"";
+		display:block;
+		width:20px;
+		height:2px;
+		background:#333;}
+	.panel span{
+		margin:5px 0;
+		text-indent:-9999px;}
+	.panel a:after{
+		width:15px;}
+	
+	/*메인슬라이더*/
+	.mainSlider{
+		height:350px;
+		background:url(../images/main_img.jpg) no-repeat center center;
+		background-size:cover;
+		position:relative;
+		margin:0;}
+	
+	.mainSlider img{
+		display:none;}
+
+	/*메뉴아이콘*/
+	.menuIcon{
+		padding:10px 0;}
+	.menuIcon li{
+		width:20%;
+	}
+	.menuIcon li span{
+		margin:0 auto;
+	}
+
+	.mainCon01{
+		display: none;
+	}
+
+/*메인콘02*/
+	.mainCon02{
+		padding:0 10px;}
+
+	.con02{
+		width:calc(50% - 5px);/*높이값 알아보기~!!!!*/
+		margin-right:10px;
+		margin-bottom:10px;}
+	
+	.con02:nth-child(2n){
+		margin-right:0;}
+	
+	.con02Menu04 h3{
+		padding-top:80px;
+	}
+	.con02Menu04 p{
+		display: none;}
+	.pdtSelect,.searchBtn{
+		display: none;
+	}
+	
+/*공지,뉴스*/		
+
+	.plusBtn{
+		display:none;
+	}
+	.notice span{
+		display:none;
+	}
+	.notice:last-child{
+		display:none;
+	}
+	.notice p:last-child{
+		display:none;
+	}
+	.con03 li{
+		display: none;
+	}
+	.con03 li:first-child{
+		display:block;
+	}
+	.con03 li span{
+		display:none;
+	}
+
+	.con03{
+		height: auto;
+	}
+	
+	.con03 h2{
+		width: 20%;
+		float: left;
+	}
+	.con03 .notice{
+		width:70%;
+		float: left;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
