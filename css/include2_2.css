@@ -1,0 +1,323 @@
+@charset utf-8;
+/*헤더*/
+
+#header{
+	width:100%;
+    height: 105px;
+    position: fixed;
+	z-index:10;
+    background:#fff;
+}
+#header h1{
+    display: inline-block;
+    vertical-align: top; 
+    width: 280px;
+    text-align: center;
+    margin-top: 35px;
+}
+#header h1 a{}
+#header h1 img{}
+.gnb{
+     display: inline-block;
+     vertical-align: top; 
+     line-height: 105px;
+}
+.gnb > li{
+    float: left;
+    padding: 0 35px;
+	position:relative;
+}
+.gnb a{}
+
+/*lnb 시작*/
+.lnb{
+	width:100%;
+	max-height:0;
+	overflow: hidden;
+	position:absolute;
+	top:101px;
+	left: 0px;
+	z-index: 1;
+	background:#fff;
+	line-height:35px;
+	font-size:12px;
+	padding:0 15px;
+	box-sizing:border-box;
+	box-shadow:2px 2px 3px rgba(0,0,0,0.2);
+
+}
+.gnb li:hover .lnb{
+	max-height:500px;
+	border-top:4px solid #f47a20;
+	transition:max-height 1s;
+}
+
+.lnb li{
+	border-bottom: 1px solid #ddd;
+}
+.lnb li:last-child{
+	border-bottom:0;
+}
+.lnb li:hover a{
+	color:#f47a20;
+}
+
+.lnb a{
+	display:block;
+	color:#6c6c6c;
+}
+
+.headerBut{
+    position: absolute;
+    right: 0px;
+    border-top:1px solid #eee;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    background: #fff;
+    z-index: 1;
+   
+        
+}
+.headerBut li{
+    float: left;
+    font-size:12px;
+    text-align:center;   
+}
+
+.headerBut li a{
+    color:#c3c3c3;
+    background: url(../images/sub/btn_link1_off.png)no-repeat left center;
+    padding-left: 20px;
+}
+.headerBut li:hover a{
+	color:#f47a20;
+	background: url(../images/sub/btn_link1_on.png)no-repeat left center;
+}
+
+.headerBut .catalogue a{
+     background-image: url(../images/sub/btn_link2_off.png);
+}
+.headerBut .catalogue:hover a{
+	background-image: url(../images/sub/btn_link2_on.png);
+}
+
+.headerBut .catalogue:before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #e3e3e3;
+    margin: 0 10px;
+}
+
+
+/*푸터 시작*/
+
+#footer{
+	margin-top:50px;
+	background:#f3f1f4;
+}
+
+.fTop{
+	height:80px;
+	line-height:80px;
+	border-top:1px solid #000;
+	background:#fff;
+}
+
+.fTop div{
+	width:50%;/*가변은 퍼센트로 설정*/
+	float:left;
+	
+}
+.fTop dl{
+	overflow:hidden;/*얘는 잘 모르겠다~*/
+}
+.fTop dt{
+	margin-left:35px;
+	float:left;
+	background:url(../images/sub/ico_board_1.jpg) no-repeat;
+	padding-left:70px;
+}
+.fTop dt:after{
+	content:"";
+	display:inline-block;
+	width: 1px;
+	height:10px;
+	background:#aaa;
+	margin:0 10px;
+}
+.fTop dd{
+	float:left;
+	font-size:14px;
+}
+.fTopL{
+	border-right:1px solid #ddd;
+	box-sizing: border-box;
+}
+.fTopR{}
+
+.fTopR dt{
+	background-image:url(../images/sub/ico_board_2.jpg);
+}
+
+
+/*푸터cs 및 정보*/
+.fBottom{
+	padding: 60px 50px;
+}
+.fCs{
+	padding-right:50px;
+	margin-right: 50px;
+	border-right: 1px solid #ddd;
+}
+.fCs, .fInfo{
+	float: left;
+}
+.fCs h3{
+	font-size:18px;
+	color:#6c6c6c;
+	font-weight:300;
+	margin-bottom:15px;
+}
+.fCs h3 span{
+	display: block;
+	font-size:22px;
+	font-weight: 500;
+	color:#333;
+	line-height:22px;
+}
+.fCs p{
+	font-size:22px;
+}
+.fCs p span{
+	display: block;
+	font-size: 34px;
+	line-height:34px;
+}
+.fCs .csEmail{
+	color:#6c6c6c;
+	font-size:14px;
+	margin:10px 0;
+}
+.csLink{}
+.csLink li{
+	float: left;
+	background:#333;
+	border-radius:50%;
+	margin-right: 5px;
+}
+.csLink a{}
+.csLink img{
+	display: block;
+}
+
+.fInfo{}
+.fInfo dl{
+	overflow:hidden;
+	font-size:14px;
+	margin-bottom:30px;
+}
+.fInfo dt{
+	width:90px;
+	float:left;
+	position: relative;
+}
+.fInfo dt:after{
+	content:"";
+	position: absolute;
+	top: 50%;
+	right:0;
+	width:1px;
+	height:10px;
+	background:#ccc;
+	margin: 0 10px;
+	margin-top:-5px;
+}
+
+.fInfo dd{
+	float:left;
+	color:#6c6c6c;
+}
+.fInfo fInfoTit{
+	line-height:20px;
+	margin-bottom:50px;
+}
+.fInfo .fInfoTit dt{
+	font-size:20px;
+	width:auto;
+	margin-right: 15px;
+}
+
+.fInfo .fInfoTit dd{
+	color:#333;
+}
+.fInfo .fInfoTit dd span{
+	color:#6c6c6c;
+}
+.fInfoTit .ceo:after{
+	content:"";
+	display:inline-block;
+	width:1px;
+	height:10px;
+	background:#ccc;
+	margin: 0 10px;
+}
+
+.fBar{
+	text-align:right;
+	border-top:1px solid #ddd;
+}
+.siteSnb{
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	border: 1px solid #333;
+	position: absolute;
+	bottom: 0;
+	background: #fff;
+	font-size:13px;
+	display:none;
+}
+.siteSnb a{}
+.siteMenu{
+	width:150px;
+	text-align: left;
+	height: 42px;
+	line-height: 42px;
+	display:inline-block;
+	background: url(../images/sub/ico_add.png)no-repeat right center;
+	margin-right: 42px;
+	position: relative;
+}
+.siteMenu a{
+	display: block;
+	color:#6c6c6c;
+	font-size:14px;
+}
+.siteMenu:hover .siteSnb{
+	display: block;
+}
+.siteSnb li:hover a{
+	color:#333;
+}
+.topBtn{
+	background: #333;
+	position: fixed;
+	right:0;
+	bottom: 0;
+}
+
+.topBtn img{
+	display:block;
+}
+
+
+
+
+
+
+
+
+
